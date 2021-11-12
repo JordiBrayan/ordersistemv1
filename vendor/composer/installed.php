@@ -2,14 +2,23 @@
     'root' => array(
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'type' => 'mine',
+        'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6b9ed23da228d76777f0a644a1a5427ae6e8ad1a',
-        'name' => 'proyect/ordersistem',
+        'reference' => 'cbc8965f599d5cce158b9764d3687ab8be345bcd',
+        'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'cbc8965f599d5cce158b9764d3687ab8be345bcd',
+            'dev_requirement' => false,
+        ),
         'composer/package-versions-deprecated' => array(
             'pretty_version' => '1.11.99.4',
             'version' => '1.11.99.4',
@@ -60,15 +69,6 @@
             'replaced' => array(
                 0 => '1.11.99',
             ),
-        ),
-        'proyect/ordersistem' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'mine',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'reference' => '6b9ed23da228d76777f0a644a1a5427ae6e8ad1a',
-            'dev_requirement' => false,
         ),
     ),
 );

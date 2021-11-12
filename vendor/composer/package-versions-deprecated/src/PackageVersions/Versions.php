@@ -23,7 +23,7 @@ final class Versions
      * @deprecated please use {@see self::rootPackageName()} instead.
      *             This constant will be removed in version 2.0.0.
      */
-    const ROOT_PACKAGE_NAME = 'proyect/ordersistem';
+    const ROOT_PACKAGE_NAME = '__root__';
 
     /**
      * Array of all available composer packages.
@@ -38,7 +38,7 @@ final class Versions
   'mongodb/mongodb' => '1.7.2@38b685191c047a57275d6ccd2ea5c50f23638485',
   'monolog/monolog' => '1.0.2@b704c49a3051536f67f2d39f13568f74615b9922',
   'heroku/heroku-buildpack-php' => 'v200@ffa4d0e714439d6f54f9608a0aa16674e82ed0a1',
-  'proyect/ordersistem' => 'dev-master@6b9ed23da228d76777f0a644a1a5427ae6e8ad1a',
+  '__root__' => 'dev-master@cbc8965f599d5cce158b9764d3687ab8be345bcd',
 );
 
     private function __construct()
