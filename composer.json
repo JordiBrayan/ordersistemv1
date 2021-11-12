@@ -1,5 +1,23 @@
 {
+    
+    "name": "proyect/ordersistem",
+    "description": "ordersistem",
+    "type": "mine",
+    "license": "gpl",
+    "authors": [
+        {
+            "name": "JordiBrayan",
+            "email": "jordibrayanmo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
+        "monolog/monolog": "1.0.*",
+        "php" : ">=7.4",
+        "ext-mbstring": "*",
         "mongodb/mongodb": "^1.7"
+    },
+    "require-dev": {
+      "heroku/heroku-buildpack-php":"*"
     }
 }
