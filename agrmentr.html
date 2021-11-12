@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Agregar un nuevo registro</title>
+  </head>
+  <body>
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('img/bg-img/pagelogin5.png');"></div>
+    <div class="contents order-2 order-md-1">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h1><strong>Agrega un nuevo registro</strong></h1>
+            <p class="mb-4">Ingresa los datos que se piden para poder agregar un nuevo registro</p>
+            <form action="agregamen3.php" method="POST">
+              <div class="form-group first">
+                <label for="username">Nombre</label>
+                <input type="text" class="form-control" placeholder="Ingresa el nombre aqui...." 
+                name="r3nom" minlength="4" required pattern="[A-Za-z0-9 ]+">
+              </div>
+              <div class="form-group first">
+                <label for="username">Descripcion</label>
+                <input type="text" class="form-control" placeholder="Ingresa la descripcion aqui...." 
+                name="r3desc" minlength="4" required>
+              </div>
+              <div class="form-group first">
+                <label for="username">Precio</label>
+                <input type="number" class="form-control" placeholder="Ingresa el precio aqui....." 
+                name="r3pre" min="1" required>
+              </div>
+              <input type="submit" value="Registrar" class="btn btn-block btn btn-warning" name='regismenu3' >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
