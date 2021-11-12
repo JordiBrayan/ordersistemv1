@@ -40,6 +40,16 @@ class ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'M' => 
+        array (
+            'Monolog' => 
+            array (
+                0 => __DIR__ . '/..' . '/monolog/monolog/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -49,6 +59,7 @@ class ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit47758ea096e75d216e44f4c4f06ed8c9::$classMap;
 
         }, null, ClassLoader::class);
