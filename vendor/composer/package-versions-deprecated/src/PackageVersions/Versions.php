@@ -38,7 +38,7 @@ final class Versions
   'mongodb/mongodb' => '1.7.2@38b685191c047a57275d6ccd2ea5c50f23638485',
   'monolog/monolog' => '1.0.2@b704c49a3051536f67f2d39f13568f74615b9922',
   'heroku/heroku-buildpack-php' => 'v200@ffa4d0e714439d6f54f9608a0aa16674e82ed0a1',
-  '__root__' => 'dev-master@cbc8965f599d5cce158b9764d3687ab8be345bcd',
+  '__root__' => 'dev-master@519fbbe2c8756d89875ad9d9624c1eec28d8d5d1',
 );
 
     private function __construct()
