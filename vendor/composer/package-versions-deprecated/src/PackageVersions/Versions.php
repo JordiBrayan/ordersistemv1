@@ -36,7 +36,7 @@ final class Versions
   'composer/package-versions-deprecated' => '1.11.99.4@b174585d1fe49ceed21928a945138948cb394600',
   'jean85/pretty-package-versions' => '1.6.0@1e0104b46f045868f11942aea058cd7186d6c303',
   'mongodb/mongodb' => '1.7.2@38b685191c047a57275d6ccd2ea5c50f23638485',
-  '__root__' => '1.0.0+no-version-set@',
+  '__root__' => 'dev-master@b5fdfc53d4bfe368967bf6c9304a293bc9218d2b',
 );
 
     private function __construct()
