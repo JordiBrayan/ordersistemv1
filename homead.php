@@ -14,7 +14,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Menu</title>
+    <title>Administrar</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -50,12 +50,8 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Usuario</strong></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Cerrar Sesion</a>
-                
-                                    </div>
+                                 <li class="nav-item dropdown">   
+                                    <a class="nav-link" href="index.html"><strong>Cerrar Sesion</strong></a>
                                 </li>
                             </ul>
                            
@@ -74,7 +70,7 @@
                 <div class="col-12">
                     <div class="breadcumb-content">
                         <h2 style = "font-family:Caveat">¡¡Bienvenido Administrador!!</h2>
-                        <h2 style = "font-family:Caveat">Dale una mejor calidad de servicio a tus comensales!!!</h2>
+                       
                         
                     </div>
                 </div>
@@ -114,7 +110,7 @@
                         <img src="img/menu-img/iconorden.png" alt="" width="220" height="50">
                         <div class="dish-info">
                             <h6 class="dish-name">Revisar las ordenes</h6>
-                            <a class="dish-price" href="menu.html"><strong>Entrar</strong></a>
+                            <a class="dish-price" href="adordenes.php"><strong>Entrar</strong></a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +119,7 @@
                         <img src="img/menu-img/iconagregar.png" alt="" width="200" height="50">
                         <div class="dish-info">
                             <h6 class="dish-name">Administrar usuarios</h6>
-                            <a class="dish-price" href="login.html"><strong>Entrar</strong></a>
+                            <a class="dish-price" href="adusuarios.php"><strong>Entrar</strong></a>
                         </div>
                     </div>
                 </div>

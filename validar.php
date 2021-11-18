@@ -14,7 +14,7 @@
                               $ad = $userDatabaseSelect->findOne(array('username' => $postdUsername,
                                'password' => $postdPassword, 'tipousu' => $setipo)); 
                                if ($ad) {
-                                    header("Location: regular-page.html");
+                                    header("Location: homead.php");
                                }else
                                 {   
                                  header("Location: login.html");
@@ -26,7 +26,7 @@
                                   $cli = $userDatabaseSelect->findOne(array('username' => $postdUsername,
                                   'password' => $postdPassword, 'tipousu' => $setipo)); 
                                     if ($cli) {
-                                        header("Location: homead.php");
+                                        header("Location: menu.php");
                                    }else
                                     {   
                                      header("Location: login.html");

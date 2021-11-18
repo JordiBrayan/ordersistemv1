@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>login</title>
+    <title>Administrar Usuarios</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -54,121 +54,128 @@
     <header class="header_area" id="header">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 h-100">           
+                <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <img class="navbar-brand" src="img/logo.png" width="190" height="170">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                                </li>    
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#reservation">Registrate</a>
+                                    <a class="nav-link" href="homead.php"><strong>Regresar</strong></a>
+                                </li>
+                                <li class="nav-item dropdown">   
+                                        <a class="nav-link" href="index.html"><strong>Cerrar Sesion</strong></a>
                                 </li>
                             </ul>
+                            <!-- Search Btn -->
                             
                         </div>
-                        
                     </nav>
-                    
                 </div>
-                
             </div>
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Breadcumb Area Start ***** -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/pagelogin.jpg)">
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/pagewelcome.jpg)">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h2>Inicia Sesion</h2>
-                        
-                        <p><i aria-hidden="true"></i>Inicia sesion para poder ordenar y poder disfrutar de tu pedido</p>
+                        <h2 style = "font-family:Caveat">Administrar Usuarios</h2>
                         
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
     <!-- ***** Breadcumb Area End ***** -->
-
-    <!-- ****** Reservation Area Start ****** -->
-    <section class="caviar-reservation-area d-md-flex align-items-center" id="reservation">
-        <div class="reservation-form-area d-flex justify-content-end">
-            <div class="reservation-form">
-<br>
-                <div class="contact-form-title" >
-                    <p>Ingresa tus datos</p>
+    <br>
+    <br>
+    <br>
+    <!-- ***** Special Menu Area Start ***** -->
+    <section id="menu">
+        <div class="container">
+            <!-- ***** inicio menu 1 ***** -->
+            <div class="row">
+                <div class="col-12 menu-heading">
+                    <div class="section-heading text-center">
+                        <h2>Usuarios</h2>
+                    </div>
                 </div>
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Nombre de usuario">
-                        </div>
-                        <div class="col-12">
-                            <input type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <br>
-<br>
-<br>
-<br>
-                        <div class="col-12">
-                            <button type="submit" class="btn caviar-btn"><span></span>Entrar</button>
-                        </div>
-                    </div>
-                </form>
-                <br>
-<br>
-<br>
             </div>
-        </div>
-        <div class="reservation-side-thumb wow fadeInRightBig" data-wow-delay="0.5s">
-            <img src="img/bg-img/pagelogin4.png" alt="">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr class="tr-head">
+                   
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Contraseña</th>
+                    <th>Tipo de usuario</th>
+                    <th>Eliminar</th>
+                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        include("conecta.php");
+                        $collection = $client->$bd->users;
+                        if ($collection->count()>0)
+                    {
+                            $documentos = $collection->find();
+                            foreach ($documentos as $documento) {                        
+                    ?>
+                    <tr>
+                        
+                        <td><?php echo $documento["_id"]; ?></td>
+                        <td><?php echo $documento["username"]; ?></td>
+                        <td><?php echo $documento["password"]; ?></td>
+                        <td><?php echo $documento["tipousu"]; ?></td>
+                        <td><a href="eliminarusu.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
+
+                    </tr>
+                    <?php
+                        }
+                    }else{
+                    ?>
+                    <tr>
+                        <td colspan="4"><h4><i class="icon-info-sign"></i> Sin registros en la Base de Datos</h4></td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-warning"><a class="btn" href="agrusu.html" style="color:black; "><strong>Agregar nuevo usuario</strong></a></button>
+            </div>
+            <!-- ***** Fin menu 3 ***** -->
         </div>
     </section>
-    <!-- ****** Reservation Area End ****** -->
-
-
-
-
+    <!-- ***** Special Menu Area End ***** -->
+<br>
+<br>
+<br>
+<br>
+<br>
     <!-- ***** Footer Area Start ***** -->
     <footer class="caviar-footer-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="footer-text">
-                        
                         <img class="navbar-brand" src="img/logo.png" width="190" height="170">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                       
+                        <p>Administra a todos tus usuarios con Order Sistem!!!</p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- ***** Footer Area End ***** -->
+    <!-- ***** Footer Area Start ***** -->
 
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -178,9 +185,6 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
     <script src="js/others/plugins.js"></script>
-    <!-- Google Maps js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
-    <script src="js/google-map/map-active.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
 </body>

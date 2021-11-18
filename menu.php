@@ -60,15 +60,8 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <div class="collapse navbar-collapse" id="caviarNav">
                             <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="homead.php"><strong>Regresar</strong></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Usuario</strong></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Cerrar Sesion</a>
-                
-                                    </div>
+                                <li class="nav-item dropdown">   
+                                        <a class="nav-link" href="index.html"><strong>Cerrar Sesion</strong></a>
                                 </li>
                             </ul>
                             <!-- Search Btn -->
@@ -118,14 +111,12 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr class="tr-head">
-                    
-                        <th>No.</th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>Pedir</th>
-                    
-                    
+                            <th>No.</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Pedir</th>
+                            <th>cantidad</th>   
                         </tr>
                     </thead>
                     <tbody>
@@ -135,21 +126,32 @@
                             if ($collection->count()>0)
                         {
                                 $documentos = $collection->find();
+                                $cantpz = 1;
+                                $nompla = 1;
+                                $idcheck = 1;
+                                $iddiv = 1;
                                 foreach ($documentos as $documento) {                        
                         ?>
                         <tr>
-                            
-                            <td><?php echo $documento["_id"]; ?></td>
+                            <td><?php echo $documento["_id"]; ?></td>    
                             <td><?php echo $documento["m1nom"]; ?></td>
                             <td><?php echo $documento["m1desc"]; ?></td>
                             <td>$<?php echo $documento["m1prec"]; ?></td>
                             <!-- <td><label>Agregar a mi orden <input type="checkbox" id="cbox1" value="first_checkbox"></label><br></td>-->
                             <td>
-                                <label >Selecciona la cantidad de <?php echo $documento["m1nom"]; ?> a ordenar</label>
-                                <input type="number" class="form-control" placeholder="0" name="r1pre" min="0"></td>
+                            <input type="checkbox" style="display: block; margin: 0 auto;" id='<?='buttonm1'.$idcheck?>' name="<?='platillom1'.$nompla?>" value="<?php echo $documento["m1nom"]; ?>">
                             </td>
-                            
-                            </div>
+                            <td>
+                                <div id="<?='newpostm1'.$iddiv?>" style="display:none" >
+                                    <input type="number" class="form-control" placeholder="0" name="<?='cantpm1'.$cantpz?>" min="0"></td>
+                                        <?php
+                                            $cantpz++;
+                                            $nompla++;
+                                            $idcheck++;
+                                            $iddiv++;
+                                        ?>
+                                </div>
+                            </td>
                         </tr>
                         <?php
                             }
@@ -177,13 +179,12 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr class="tr-head">
-                    
-                        <th>No.</th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>Pedir</th>
-                    
+                            <th>No.</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Pedir</th>
+                            <th>cantidad</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -193,19 +194,31 @@
                             if ($collection->count()>0)
                         {
                                 $documentos = $collection->find();
+                                $cantpz = 1;
+                                $nompla = 1;
+                                $idcheck = 1;
+                                $iddiv = 1;
                                 foreach ($documentos as $documento) {                        
                         ?>
                         <tr>
-                            
                             <td><?php echo $documento["_id"]; ?></td>
                             <td><?php echo $documento["m2nom"]; ?></td>
                             <td><?php echo $documento["m2desc"]; ?></td>
                             <td>$<?php echo $documento["m2prec"]; ?></td>
                             <td>
-                                <label >Selecciona la cantidad de <?php echo $documento["m2nom"]; ?> a ordenar</label>
-                                <input type="number" class="form-control" placeholder="0" name="r2pre" min="0"></td>
+                                <input type="checkbox" style="display: block; margin: 0 auto;" id='<?='buttonm2'.$idcheck?>' name="<?='platillom2'.$nompla?>" value="<?php echo $documento["m2nom"]; ?>">       
                             </td>
-
+                            <td>
+                                <div id="<?='newpostm2'.$iddiv?>" style="display:none" >
+                                    <input type="number" class="form-control" placeholder="0" name="<?='cantpm2'.$cantpz?>" min="0"></td>
+                                        <?php
+                                            $cantpz++;
+                                            $nompla++;
+                                            $idcheck++;
+                                            $iddiv++;
+                                        ?>
+                                </div>
+                            </td>
                         </tr>
                         <?php
                             }
@@ -233,12 +246,12 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr class="tr-head">
-                    
-                        <th>No.</th>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>Pedir</th>
+                            <th>No.</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Pedir</th>
+                            <th>cantidad</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -248,6 +261,10 @@
                             if ($collection->count()>0)
                         {
                                 $documentos = $collection->find();
+                                $cantpz = 1;
+                                $nompla = 1;
+                                $idcheck = 1;
+                                $iddiv = 1;
                                 foreach ($documentos as $documento) {                        
                         ?>
                         <tr>
@@ -257,10 +274,19 @@
                             <td><?php echo $documento["m3desc"]; ?></td>
                             <td>$<?php echo $documento["m3prec"]; ?></td>
                             <td>
-                                <label >Selecciona la cantidad de <?php echo $documento["m3nom"]; ?> a ordenar</label>
-                                <input type="number" class="form-control" placeholder="0" name="r3pre" min="0"></td>
+                                <input type="checkbox" style="display: block; margin: 0 auto;" id='<?='buttonm3'.$idcheck?>' name="<?='platillom3'.$nompla?>" value="<?php echo $documento["m3nom"]; ?>">   
                             </td>
-
+                            <td>
+                                <div id="<?='newpostm3'.$iddiv?>" style="display:none" >
+                                    <input type="number" class="form-control" placeholder="0" name="<?='cantpm3'.$cantpz?>" min="0"></td>
+                                        <?php
+                                            $cantpz++;
+                                            $nompla++;
+                                            $idcheck++;
+                                            $iddiv++;
+                                        ?>
+                                </div>
+                            </td>
                         </tr>
                         <?php
                             }
@@ -305,6 +331,9 @@
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
+    <script src="js/opcheck1.js"></script>
+    <script src="js/opcheck2.js"></script>
+    <script src="js/opcheck3.js"></script>
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

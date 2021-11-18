@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Menu</title>
+    <title>Administrar Menu</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -63,12 +63,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="homead.php"><strong>Regresar</strong></a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Usuario</strong></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Cerrar Sesion</a>
-                
-                                    </div>
+                                <li class="nav-item dropdown">   
+                                        <a class="nav-link" href="index.html"><strong>Cerrar Sesion</strong></a>
                                 </li>
                             </ul>
                             <!-- Search Btn -->
@@ -136,7 +132,7 @@
                         <td><?php echo $documento["m1nom"]; ?></td>
                         <td><?php echo $documento["m1desc"]; ?></td>
                         <td><?php echo $documento["m1prec"]; ?></td>
-                        <td><a href="eliminarm1.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
+                        <td><a href="eliminarplatm1.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
 
                     </tr>
                     <?php
@@ -195,7 +191,7 @@
                         <td><?php echo $documento["m2nom"]; ?></td>
                         <td><?php echo $documento["m2desc"]; ?></td>
                         <td><?php echo $documento["m2prec"]; ?></td>
-                        <td><a href="eliminarm1.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
+                        <td><a href="eliminarplatm2.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
 
                     </tr>
                     <?php
@@ -254,7 +250,7 @@
                         <td><?php echo $documento["m3nom"]; ?></td>
                         <td><?php echo $documento["m3desc"]; ?></td>
                         <td><?php echo $documento["m3prec"]; ?></td>
-                        <td><a href="eliminarm1.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
+                        <td><a href="eliminarplatm3.php?id=<?php echo $documento['_id'] ?>" class="danger" style="color:red; "><b> Eliminar</b></a></td>
 
                     </tr>
                     <?php
