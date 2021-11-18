@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <table class="table">
+            <table class="table" class="container">
                 <thead class="thead-dark">
                     <tr class="tr-head">
                    
