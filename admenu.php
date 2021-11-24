@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Administrar Menu</title>
+    <title>Administrar Menú</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -42,7 +42,7 @@
                         <i class="pe-7s-close-circle" aria-hidden="true"></i>
                     </div>
                     <form action="#" method="get">
-                        <input type="search" name="caviarSearch" id="search" placeholder="Search Your Favourite Dish ...">
+                        <input type="search" name="caviarSearch" id="search" placeholder="¡Busca tu comida favorita!">
                         <input type="submit" class="d-none" value="submit">
                     </form>
                 </div>
@@ -64,7 +64,7 @@
                                     <a class="nav-link" href="homead.php"><strong>Regresar</strong></a>
                                 </li>
                                 <li class="nav-item dropdown">   
-                                        <a class="nav-link" href="index.html"><strong>Cerrar Sesion</strong></a>
+                                        <a class="nav-link" href="index.html"><strong>Cerrar Sesión</strong></a>
                                 </li>
                             </ul>
                             <!-- Search Btn -->
@@ -83,7 +83,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h2 style = "font-family:Caveat">Administrar Menu</h2>
+                        <h2 style = "font-family:Caveat">Administrar Menú</h2>
                         
                     </div>
                 </div>
@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-12 menu-heading">
                     <div class="section-heading text-center">
-                        <h2>Menu 1</h2>
+                        <h2>Menú 1</h2>
                     </div>
                 </div>
             </div>
@@ -170,7 +170,7 @@
                    
                     <th>No.</th>
                     <th>Nombre</th>
-                    <th>Descripcion</th>
+                    <th>Descripción</th>
                     <th>Precio</th>
                     <th>Eliminar</th>
                    
@@ -229,7 +229,7 @@
                    
                     <th>No.</th>
                     <th>Nombre</th>
-                    <th>Descripcion</th>
+                    <th>Descripción</th>
                     <th>Precio</th>
                     <th>Eliminar</th>
                    
@@ -286,7 +286,7 @@
                     <div class="footer-text">
                         <img class="navbar-brand" src="img/logo.png" width="190" height="170">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p>Administra todo tu menu con Order Sistem!!!</p>
+                        <p>Administra todo tu menú con Order Sistem!!!</p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
