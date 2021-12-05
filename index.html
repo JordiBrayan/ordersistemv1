@@ -1,175 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Inicio</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Stylesheet -->
-    <link href="style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive/responsive.css" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+<title>Home</title>
+<meta name="description" content="">
+<meta name="author" content="WebThemez">
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<!-- Owl Carousel Assets -->
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<!-- Font Awesome -->
+<link href="font/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="caviar-load"></div>
-        <div class="preload-icons">
-            <img class="preload-1" src="img/core-img/preload-1.png" alt="">
-            <img class="preload-2" src="img/core-img/preload-2.png" alt="">
-            <img class="preload-3" src="img/core-img/preload-3.png" alt="">
-        </div>
-    </div>
-    <!-- ***** Header Area Start ***** -->
-    <header class="header_area" id="header">
-              
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12 h-100">
-                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
-                       <!-- <a class="navbar-brand" href="index.html">caviar</a>-->
-                        <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-                        <div class="collapse navbar-collapse" id="caviarNav">
-                            <ul class="navbar-nav ml-auto" id="caviarMenu">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#home"><strong>Home </strong><span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="registro.html"><strong>Registrate</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html"><strong>Iniciar</strong></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ****** Welcome Area Start ****** -->
-    <section class="caviar-hero-area" id="home">
-        
-        <div class="caviar-hero-slides owl-carousel">
-            <!-- Single Slides -->
-            <div class="single-hero-slides bg-img" style="background-image: url(img/bg-img/pageinicio.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-11 col-md-6 col-lg-4">
-                            <div class="hero-content">
-                                <h2>¿Ya ordenaste?</h2>
-                                <p>Inicia sesion para poder realizar tu orden y disfrutar de tus alimentos o bebidas</p>
-                                <a href="login.html" class="btn caviar-btn"><span></span> Ordenar ahora</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Nav --> 
-                <div class="hero-slides-nav bg-img" style="background-image: url(img/bg-img/pageinicio5.png);"></div>
-            </div>
-            <!-- Single Slides -->
-            <div class="single-hero-slides bg-img" style="background-image: url(img/bg-img/pageinicio5.png);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-11 col-md-6 col-lg-4">
-                            <div class="hero-content">
-                                <h2>¿Ya ordenaste?</h2>
-                                <p>Inicia sesion para poder realizar tu orden y disfrutar de tus alimentos o bebidas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Nav -->
-                <div class="hero-slides-nav bg-img" style="background-image: url(img/bg-img/pageinicio.jpg);"></div>
-            </div>
-        </div>
-    </section>
-    <!-- ****** Welcome Area End ****** -->
-
-    <!-- ****** About Us Area Start ****** -->
-    <section class="caviar-about-us-area section-padding-150" id="about">
-        <div class="container">
-            <!-- About Us Single Area -->
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <div class="about-us-thumbnail wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="img/bg-img/about-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
-                    <div class="section-heading">
-                        <h2>About Us</h2>
-                    </div>
-                    <div class="about-us-content">
-                        <span>restaurant style</span>
-                        <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- About Us Single Area -->
-            <div class="about-us-second-part">
-                <div class="row align-items-center pt-200">
-                    <div class="col-12 col-md-6 col-lg-5">
-                        <div class="about-us-content">
-                            <span>our chef</span>
-                            <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 ml-md-auto">
-                        <div class="about-us-thumbnail wow fadeInUp" data-wow-delay="0.5s">
-                            <img src="img/bg-img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ****** About Us Area End ****** -->
-
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo2.png" width="90" height="70" /></i></b></a> </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="mainNav">
+          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse--> 
+    </nav>
+    <!--/.navbar--> 
+  </div>
+  <!--/.container--> 
+</header>
+<!--/.header-->
+<div id="#top"></div>
+<section id="home">
     
-    <!-- ****** Footer Area Start ****** -->
-    <footer class="caviar-footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-text">
-                   
-                        <img class="navbar-brand" src="img/logo.png" width="190" height="170">
-                        
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p>Realiza tus ordenes con nosotros!!!</p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
+  <div class="banner-container"> 
+  	<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img src="images/inicio1.png"  width="1682" height="100" /></div>
+    <div class="item"><img src="images/inicio3.png" width="1682" height="" /></div>
+   
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+	
+  </div>  
+  
+  <div class="container hero-text2" >   
+  <br>
+    <br>     
+		<div class="col-md" >
+		<h2 style="text-align: center;">¡¡Bienvenido comensal!!</h1>
+			
+		
+    </div>  
+		<br>
+    <br>
+  </div>
+</section>
+<br>
+
+<section id="aboutUs">
+
+  
+  <div class="container">
+  
+    <div class="row feature design">
+      <div class="area1 columns left">
+        <h3>¿Quiénes somos?</h3>
+        <p>Ordersystem es un sistema de control de ordenes el cual a través de la implementación de un QR permite ingresar al menú del restaurante el cual tiene la función de poder realizar los pedidos por los mismos comensales de una manera más rápida, eficiente y amigable, de esta manera se estaría reduciendo el tiempo de espera de atención de algún mesero. Por otra parte, el sistema cuenta con una interfaz para meseros donde se podrán visualizar todas las ordenes realizadas por los clientes para asi poder atender cada una de ellas. </p>
+        <p></p>
+        <br>
+  
+         
+      </div>
+      <div class="area2 columns feature-media right"> <img src="images/pagelog.png" width="590" height="200"> </div>
+    </div>
+    <div class="row dataTxt">	
+						<div class="col-md-4 col-sm-6">
+							<h3>Nuestra Misión</h3>
+							<p>Poder posicionarnos como uno de los mejores sistemas de pedidos de la región dando a conocer el sistema de adaptación a restaurantes de manera que sea productivo, innovador y tecnológico para los negocios de restaurantes, además de llamar la atención a nuevos clientes incrementar el número de personas que visiten el lugar y tenga una alta ventaja en la competencia generando productividad y ganancias.</p>
+							
+							<br>
+						</div>
+						
+						<div class="col-md-4 col-sm-6">
+							
+							<h3>Nuestra Visión </h3>
+							<p>Dar a conocer al restaurante brindando un servicio de calidad, innovador, y posicionar en la región como uno de los mejores brindado servicio tecnológico y aumentando con ello la preferencia de los clientes para alcanzar una mayor ventaja competitiva.</p>
+                          
+							<!-- Accordion starts -->
+							</div>
+						
+						<div class="col-md-4 col-sm-6">
+							
+							<h3> Valores más preciados </h3>
+						
+              <ul  class="list3">
+								<li>Respeto</li>
+								<li>Cortesía</li>
+								<li>Honestidad</li>
+								<li>Amabilidad</li> 
+							</ul>
+                            
+							<!-- Accordion starts -->
+							</div>
+						
+					</div>
+  </div>
+</section> 
+
+    <br>
+    
+<br>
+    <br>
+   
+<footer>
+<div class="container" style="text-align: center;">
+        <div class="row" style="text-align: center;">
+            
+            
+            <div  style="text-align: center;" >
+            	<div class="col" style="text-align: center;">
+                    <h4 style="text-align: center;"> ¡¡Realiza tus órdenes ahora!!</h4>
+                    <p >Realiza tus pedidos de una manera más rápida y eficiente.</p>
+               
+                        <div style="text-align: center;">
+                        <b><i><img src="images/logo2.png" width="90" height="70" /></i></b>
+                           
+                        </div>
+              
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- ****** Footer Area End ****** -->
+            
+            
 
-    <!-- Jquery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap-4 js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="js/others/plugins.js"></script>
-    <!-- Active JS -->
-    <script src="js/active.js"></script>
+             
+        </div>
+         
+    </div>
+    
+</footer>
+<!--/.page-section-->
+
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+
+<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
+<script src="jsn/opcheck1.js"></script>
+<script src="js/modernizr-latest.js"></script> 
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script src="js/jquery.nav.js" type="text/javascript"></script> 
+<script src="js/jquery.fittext.js"></script> 
+<script src="js/waypoints.js"></script> 
+<script src="js/custom.js" type="text/javascript"></script> 
+<script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
+</html>

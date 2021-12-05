@@ -3,22 +3,22 @@
 include("conecta.php");
 $collection = $client->$bd->users;
 
-	$nomusuario= $_POST["rusnom"];
-    $pass= $_POST["ruspass"];
+	$nomus= $_POST["adnom"];
+    $passus= $_POST["adpass"];
+	$tipous= $_POST["setipousu"];
+	
 
 	
 	//////////////////////////////////////
 	$insertOneResult = $collection->insertOne([
-		'username' => $nomusuario,
-		'password' => $pass,
-        'tipousu' => "cliente"
-
-		
+		'username' => $nomus,
+		'password' => $passus,
+        'tipousu' => $tipous
 	]);
 	
 	//////////////////////////////////////
 
 
-	header("Refresh: 0;url=login.html")
+	header("Refresh: 0;url=adusuarios.php")
 
 ?>

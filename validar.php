@@ -14,19 +14,19 @@
                               $ad = $userDatabaseSelect->findOne(array('username' => $postdUsername,
                                'password' => $postdPassword, 'tipousu' => $setipo)); 
                                if ($ad) {
-                                    header("Location: homead.php");
+                                    header("Location: homead.html");
                                }else
                                 {   
                                  header("Location: login.html");
 
                                 }
 
-                            }else if($setipo == cliente)
+                            }else if($setipo == Mesero)
                                 {   
                                   $cli = $userDatabaseSelect->findOne(array('username' => $postdUsername,
                                   'password' => $postdPassword, 'tipousu' => $setipo)); 
                                     if ($cli) {
-                                        header("Location: menu.php");
+                                        header("Location: adordenesm.php");
                                    }else
                                     {   
                                      header("Location: login.html");

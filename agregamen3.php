@@ -1,7 +1,7 @@
 <?php
 
 include("conecta.php");
-$collection = $client->$bd->menu3;
+$collection = $client->$bd->menu1;
 
 	$nomenu= $_POST["r3nom"];
     $descmenu= $_POST["r3desc"];
@@ -11,9 +11,9 @@ $collection = $client->$bd->menu3;
 	
 	//////////////////////////////////////
 	$insertOneResult = $collection->insertOne([
-		'm3nom' => $nomenu,
-		'm3desc' => $descmenu,
-        'm3prec' => $premenu
+		'm1nom' => $nomenu,
+		'm1desc' => $descmenu,
+        'm1prec' => $premenu
 
 		
 	]);
