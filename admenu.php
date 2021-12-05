@@ -149,6 +149,7 @@
             <br>
             <br>
             <div style="text-align: center;">
+<<<<<<< HEAD
                 <button type="button" class="btn btn-warning"><a class="btn" href="agrmenun.html" style="color:black; "><strong>Agregar nuevo registro</strong></a></button>
             </div>
             <!-- ***** Fin menu 1 ***** -->
@@ -267,6 +268,8 @@
             <br>
             <br>
             <div style="text-align: center;">
+=======
+>>>>>>> 1173541 (Cambios para implementar QR en el proyecto)
                 <button type="button" class="btn btn-warning"><a class="btn" href="agrmentr.html" style="color:black; "><strong>Agregar nuevo registro</strong></a></button>
             </div>
             <!-- ***** Fin menu 3 ***** -->

@@ -4,11 +4,9 @@
 if(isset($_POST['ordenar']))
                    {
                     include("costdm1.php");
-                    include("costdm2.php");
-                    include("costdm3.php");
 
                     //'col1' => md5(uniqid(null, true)),
-                    $resfinal=($resm1+$resm2+$resm3);
+                
                     include("conecta.php");
                     $collection = $client->$bd->ordenes;
                     $insertOneResult = $collection->insertOne([
@@ -28,40 +26,6 @@ if(isset($_POST['ordenar']))
                         'platoname14' => $storednom114,
                         'platoname15' => $storednom115,
 
-                        'platoname16' => $storednom21,
-                        'platoname17' => $storednom22,
-                        'platoname18' => $storednom23,
-                        'platoname19' => $storednom24,
-                        'platoname20' => $storednom25,
-                        'platoname21' => $storednom26,
-                        'platoname22' => $storednom27,
-                        'platoname23' => $storednom28,
-                        'platoname24' => $storednom29,
-                        'platoname25' => $storednom210,
-                        'platoname26' => $storednom211,
-                        'platoname27' => $storednom212,
-                        'platoname28' => $storednom213,
-                        'platoname29' => $storednom214,
-                        'platoname30' => $storednom215,
-
-                        'platoname31' => $storednom31,
-                        'platoname32' => $storednom32,
-                        'platoname33' => $storednom33,
-                        'platoname34' => $storednom34,
-                        'platoname35' => $storednom35,
-                        'platoname36' => $storednom36,
-                        'platoname37' => $storednom37,
-                        'platoname38' => $storednom38,
-                        'platoname39' => $storednom39,
-                        'platoname40' => $storednom310,
-                        'platoname41' => $storednom311,
-                        'platoname42' => $storednom312,
-                        'platoname43' => $storednom313,
-                        'platoname44' => $storednom314,
-                        'platoname45' => $storednom315,
-
-                        
-
                         'cantpz1' => $postdprecm11,
                         'cantpz2' => $postdprecm12,
                         'cantpz3' => $postdprecm13,
@@ -77,43 +41,11 @@ if(isset($_POST['ordenar']))
                         'cantpz13' => $postdprecm113,
                         'cantpz14' => $postdprecm114,
                         'cantpz15' => $postdprecm115,
-
-                        'cantpz16' => $postdprecm21,
-                        'cantpz17' => $postdprecm22,
-                        'cantpz18' => $postdprecm23,
-                        'cantpz19' => $postdprecm24,
-                        'cantpz20' => $postdprecm25,
-                        'cantpz21' => $postdprecm26,
-                        'cantpz22' => $postdprecm27,
-                        'cantpz23' => $postdprecm28,
-                        'cantpz24' => $postdprecm29,
-                        'cantpz25' => $postdprecm210,
-                        'cantpz26' => $postdprecm211,
-                        'cantpz27' => $postdprecm212,
-                        'cantpz28' => $postdprecm213,
-                        'cantpz29' => $postdprecm214,
-                        'cantpz30' => $postdprecm215,
-
-                        'cantpz31' => $postdprecm31,
-                        'cantpz32' => $postdprecm32,
-                        'cantpz33' => $postdprecm33,
-                        'cantpz34' => $postdprecm34,
-                        'cantpz35' => $postdprecm35,
-                        'cantpz36' => $postdprecm36,
-                        'cantpz37' => $postdprecm37,
-                        'cantpz38' => $postdprecm38,
-                        'cantpz39' => $postdprecm39,
-                        'cantpz40' => $postdprecm310,
-                        'cantpz41' => $postdprecm311,
-                        'cantpz42' => $postdprecm312,
-                        'cantpz43' => $postdprecm313,
-                        'cantpz44' => $postdprecm314,
-                        'cantpz45' => $postdprecm315,
-                        'platoprec' => $resfinal
+                        'platoprec' => $resm1
                     ]);
                    
   
-                    echo "<script type='text/javascript'> alert('Su orden esta siendo atendida, su total a pagar es de $$resfinal pesos');
+                    echo "<script type='text/javascript'> alert('Su orden esta siendo atendida, su total a pagar es de $$resm1 pesos');
                     window.location.href='menu.php';
                     </script>";
       

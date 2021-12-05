@@ -104,7 +104,7 @@
                 <div class="row">
                     <div class="col-12 menu-heading">
                         <div class="section-heading text-center">
-                            <h2>Menu 1</h2>
+                            <h2>Menu</h2>
                         </div>
                     </div>
                 </div>
@@ -164,140 +164,6 @@
                     </tbody>
                 </table>
                 <!-- ***** Fin menu 1 ***** -->
-                <br>
-                <br>
-                <br>
-                <!-- ***** inicio menu 2 ***** -->
-                <div class="row">
-                    <div class="col-12 menu-heading">
-                        <div class="section-heading text-center">
-                            <h2>Menu 2</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr class="tr-head">
-                            <th>No.</th>
-                            <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Pedir</th>
-                            <th>cantidad</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            include("conecta.php");
-                            $collection = $client->$bd->menu2;
-                            if ($collection->count()>0)
-                        {
-                                $documentos = $collection->find();
-                                $cantpz = 1;
-                                $nompla = 1;
-                                $idcheck = 1;
-                                $iddiv = 1;
-                                foreach ($documentos as $documento) {                        
-                        ?>
-                        <tr>
-                            <td><?php echo $documento["_id"]; ?></td>
-                            <td><?php echo $documento["m2nom"]; ?></td>
-                            <td><?php echo $documento["m2desc"]; ?></td>
-                            <td>$<?php echo $documento["m2prec"]; ?></td>
-                            <td>
-                                <input type="checkbox" style="display: block; margin: 0 auto;" id='<?='buttonm2'.$idcheck?>' name="<?='platillom2'.$nompla?>" value="<?php echo $documento["m2nom"]; ?>">       
-                            </td>
-                            <td>
-                                <div id="<?='newpostm2'.$iddiv?>" style="display:none" >
-                                    <input type="number" class="form-control" placeholder="0" name="<?='cantpm2'.$cantpz?>" min="0"></td>
-                                        <?php
-                                            $cantpz++;
-                                            $nompla++;
-                                            $idcheck++;
-                                            $iddiv++;
-                                        ?>
-                                </div>
-                            </td>
-                        </tr>
-                        <?php
-                            }
-                        }else{
-                        ?>
-                        <tr>
-                            <td colspan="4"><h4><i class="icon-info-sign"></i> Sin registros en la Base de Datos</h4></td>
-                        </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <!-- ***** Fin menu 2 ***** -->
-                <br>
-                <br>
-                <br>
-                <!-- ***** inicio menu 3 ***** -->
-                <div class="row">
-                    <div class="col-12 menu-heading">
-                        <div class="section-heading text-center">
-                            <h2>Menu 3</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr class="tr-head">
-                            <th>No.</th>
-                            <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Pedir</th>
-                            <th>cantidad</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            include("conecta.php");
-                            $collection = $client->$bd->menu3;
-                            if ($collection->count()>0)
-                        {
-                                $documentos = $collection->find();
-                                $cantpz = 1;
-                                $nompla = 1;
-                                $idcheck = 1;
-                                $iddiv = 1;
-                                foreach ($documentos as $documento) {                        
-                        ?>
-                        <tr>
-                            
-                            <td><?php echo $documento["_id"]; ?></td>
-                            <td><?php echo $documento["m3nom"]; ?></td>
-                            <td><?php echo $documento["m3desc"]; ?></td>
-                            <td>$<?php echo $documento["m3prec"]; ?></td>
-                            <td>
-                                <input type="checkbox" style="display: block; margin: 0 auto;" id='<?='buttonm3'.$idcheck?>' name="<?='platillom3'.$nompla?>" value="<?php echo $documento["m3nom"]; ?>">   
-                            </td>
-                            <td>
-                                <div id="<?='newpostm3'.$iddiv?>" style="display:none" >
-                                    <input type="number" class="form-control" placeholder="0" name="<?='cantpm3'.$cantpz?>" min="0"></td>
-                                        <?php
-                                            $cantpz++;
-                                            $nompla++;
-                                            $idcheck++;
-                                            $iddiv++;
-                                        ?>
-                                </div>
-                            </td>
-                        </tr>
-                        <?php
-                            }
-                        }else{
-                        ?>
-                        <tr>
-                            <td colspan="4"><h4><i class="icon-info-sign"></i> Sin registros en la Base de Datos</h4></td>
-                        </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
                 <br>
                 <br>
                 <br>

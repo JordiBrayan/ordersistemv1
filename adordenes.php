@@ -138,9 +138,12 @@
                             <td><?php echo $documento["_id"]; ?></td>
                             <td>
                                 <?php
-                                    for($contador = 1; $contador<=45; $contador++){
-                                        if ($documento['platoname'.$contador]!==null) {
+                                    for($contador = 1; $contador<=15; $contador++){
+                                       
+                                     
+                                        if (isset($documento['platoname'.$contador])) {
                                             echo $documento['platoname'.$contador]; 
+                                            //echo $documento['platoname'.$contador]; 
                                         }
                                         
                                 ?>
@@ -151,7 +154,8 @@
                             </td>
                             <td>
                                 <?php
-                                    for($contador = 1; $contador<=45; $contador++){ 
+                                    for($contador = 1; $contador<=15; $contador++){
+                                        
                                         if ($documento['cantpz'.$contador]!==0) {
                                             echo $documento['cantpz'.$contador]; 
                                         }        
@@ -205,8 +209,6 @@
     </footer>
     <!-- ***** Footer Area Start ***** -->
     <script src="js/opcheck1.js"></script>
-    <script src="js/opcheck2.js"></script>
-    <script src="js/opcheck3.js"></script>
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
